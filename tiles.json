@@ -1,0 +1,13 @@
+[
+    {"pattern": "worm", "isFlower": true, "isWind": false, "isBig": false},
+    {"pattern": "chicken", "isFlower": true, "isWind": false, "isBig": false},
+    {"pattern": "cat", "isFlower": true, "isWind": false, "isBig": false},
+    {"pattern": "mouse", "isFlower": true, "isWind": false, "isBig": false},
+    {"pattern": "dong", "isFlower": false, "isWind": true, "isBig": false},
+    {"pattern": "nan", "isFlower": false, "isWind": true, "isBig": false},
+    {"pattern": "xi", "isFlower": false, "isWind": true, "isBig": false},
+    {"pattern": "bei", "isFlower": false, "isWind": true, "isBig": false},
+    {"pattern": "red", "isFlower": false, "isWind": false, "isBig": true},
+    {"pattern": "green", "isFlower": false, "isWind": false, "isBig": true},
+    {"pattern": "white", "isFlower": false, "isWind": false, "isBig": true}
+]

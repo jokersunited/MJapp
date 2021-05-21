@@ -1,0 +1,43 @@
+body {
+    font-family: 'KoHo', sans-serif !important;
+    background-image: url("/static/mjback.png")
+}
+
+#roomcreation {
+    margin: auto;
+    text-align: center;
+}
+
+#roomcreation h1 {
+    background-color: white;
+    border-top: solid;
+    border-bottom: solid;
+    padding: 25px;
+    font-size: 48pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+#roomcreation h2 {
+    font-size: 36pt;
+}
+
+#joinfield, #createfield {
+    border: groove;
+    min-height: 600px;
+    background-color: white;
+    font-size: 16pt;
+}
+
+#joinfield .row, #createfield .row {
+    margin: 25px;
+}
+
+.fieldholder {
+    margin: 10%;
+}
+
+#roomdiv {
+    padding: 25px 250px 25px 250px;
+
+}

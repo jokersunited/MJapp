@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="./static/css/chat.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/room.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/game.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.0.0/dist/phaser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js" integrity="sha512-eVL5Lb9al9FzgR63gDs1MxcDS2wFu3loYAgjIH0+Hg38tCS8Ag62dwKyH+wzDb+QauDpEZjXbMn11blw8cbTJQ==" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <script src="./static/js/clientChat.js"></script>
+    <script src="./static/js/Waiting.js"></script>
+    <script src="./static/js/Round.js"></script>
+    <script src="./static/js/mjGame.js"></script>
+</head>
+<body>
+    <div id="roomcreation">
+      <h1>Welcome to Mahjong Multiplayer</h1>
+      <div id="roomdiv">
+        <div class="row">
+          <div id="createfield" class="col-md-6 rounded-1">
+            <h2>Create a Room!</h2>
+            <div class='fieldholder'>
+              <div class="row">
+                <label>ENTER YOUR NAME:</label>
+              </div>
+              <div class="row">
+                <input id='createname'></input>
+              </div>
+              <div class="row">
+                <button id='createroom'>Create room</button>
+              </div>
+            </div>
+          </div>
+          <div id="joinfield" class="col-md-6 rounded-1">
+            <h2>Join a Room!</h2>
+            <div class="fieldholder">
+              <div class="row">
+                <label>ENTER YOUR NAME:</label>
+              </div>
+              <div class="row">
+                <input id='joinname'></input>
+              </div>
+              <div class="row">
+                <label>ENTER ROOM ID:</label>
+              </div>
+              <div class="row">
+                <input id='roomId'></input>
+              </div>      
+              <div class="row">
+                <button id='joinroom'>Join room</button>
+              </div>
+              <div class="row alertfield">
+
+              </div>
+            </div>
+          </div>        
+        </div>
+      </div>      
+    </div>
+    <div id="playspace">
+      <div id='chatspace' class="col-md-3">
+        <section class="msger">
+            <header class="msger-header">
+              <div class="msger-header-title">
+                <i class="fas fa-comment-alt"></i>
+              </div>
+              <div class="msger-header-options">
+                <span><i class="fas fa-cog"></i></span>
+              </div>
+            </header>
+          
+            <main class="msger-chat">
+                
+            </main>
+          
+            <div class="msger-inputarea">
+              <input type="text" class="msger-input" placeholder="Enter your message...">
+              <button class="msger-send-btn">Send</button>
+            </div>
+          </section>
+      </div>
+      <div id="mjgame" class="col-md-9">
+      </div>
+    </div>
+    
+
+</body>
+</html>
