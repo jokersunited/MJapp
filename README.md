@@ -1,0 +1,2 @@
+# MJapp
+Multiplayer mahjong game
