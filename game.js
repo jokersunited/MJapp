@@ -13,6 +13,7 @@ function Player(name, sid, number) {
 function gamePlayer(name, sid) {
   this.name = name;
   this.sid = sid;
+  this.ready = false;
 
   this.wind = null
   this.closedHand = [];

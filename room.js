@@ -53,7 +53,6 @@ function startGame(msg) {
     games[msg.roomid] = new Game(gamePlayer_arr)
     games[msg.roomid].setWind()    
     io.in(msg.roomid.toString()).emit('startGame');
-    initRound(msg.roomid)
 }
 
 function createRoom(name){
@@ -134,5 +133,18 @@ function initRound(roomid) {
     })
 }
 
+function playerReadyCheck(players) {
+    players.forEach((player) => {
+        if (!player.ready) {
+            return false
+        }
+    })
+    return true
+
+}
+
 function startRound(msg) {
+    var room = Array.from(this.rooms)[1]
+    console.log(room)
+    initRound(room.toString())
 }
